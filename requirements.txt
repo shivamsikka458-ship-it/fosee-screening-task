@@ -1,0 +1,32 @@
+# ============================================================
+# Requirements for DWSIM Parametric Screening Script
+# Internship Screening Task - Shivam Sikka (24BCE10288)
+# VIT Bhopal University
+# ============================================================
+
+# Core data handling
+pandas>=1.5.0
+
+# Python.NET bridge for DWSIM COM/.NET interop
+pythonnet>=3.0.0
+
+# ============================================================
+# SYSTEM / EXTERNAL REQUIREMENTS (not pip-installable)
+# ============================================================
+# 1. DWSIM 8.x or later (Windows only)
+#    Download: https://dwsim.org/
+#    Default install path: C:\Users\<username>\AppData\Local\DWSIM
+#
+# 2. .NET Framework 4.8 or .NET 6+ runtime (Windows)
+#    Required by pythonnet to load DWSIM DLLs
+#
+# 3. Python 3.8 - 3.11 (recommended)
+#    pythonnet may have compatibility issues with Python 3.12+
+#
+# ============================================================
+# DWSIM DLLs loaded at runtime (auto-resolved from dwsimpath)
+# ============================================================
+#   DWSIM.Automation.dll
+#   DWSIM.Interfaces.dll
+#   DWSIM.Thermodynamics.dll
+#   DWSIM.UnitOperations.dll
